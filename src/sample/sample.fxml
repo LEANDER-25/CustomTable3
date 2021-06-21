@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ScrollPane layoutX="8.0" layoutY="66.0" AnchorPane.bottomAnchor="101.19999999999999" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="7.2000000000000455" AnchorPane.topAnchor="66.0">
+         <content>
+            <VBox fx:id="itemHolder" prefHeight="231.0" prefWidth="583.0" />
+         </content>
+      </ScrollPane>
+      <HBox layoutX="8.0" layoutY="34.0" prefHeight="30.0" prefWidth="583.0" style="-fx-background-color: tomato;" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="34.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="83.0" text="ID" />
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="250.0" text="Name" />
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="250.0" text="Author" />
+         </children>
+      </HBox>
+      <Button fx:id="btnDelAll" layoutX="264.0" layoutY="323.0" mnemonicParsing="false" onAction="#removeAll" prefHeight="26.0" prefWidth="106.0" text="Delete All" AnchorPane.bottomAnchor="50.60000000000002" AnchorPane.rightAnchor="229.60000000000002" />
+      <Button fx:id="btnAdd" layoutX="7.0" layoutY="323.0" mnemonicParsing="false" onAction="#create" prefHeight="26.0" prefWidth="50.0" text="Add" AnchorPane.bottomAnchor="50.6" AnchorPane.leftAnchor="8.0" />
+      <TextField fx:id="tfID" layoutX="59.0" layoutY="323.0" prefHeight="26.0" prefWidth="63.0" promptText="id..." AnchorPane.bottomAnchor="50.6" />
+      <TextField fx:id="tfAuID" layoutX="59.0" layoutY="349.0" prefHeight="26.0" prefWidth="63.0" promptText="id author..." AnchorPane.bottomAnchor="24.600000000000023" />
+      <TextField fx:id="tfName" layoutX="122.0" layoutY="323.0" prefHeight="26.0" prefWidth="142.0" promptText="name book" AnchorPane.bottomAnchor="50.6" />
+      <TextField fx:id="tfAuName" layoutX="122.0" layoutY="349.0" prefHeight="26.0" prefWidth="142.0" promptText="name author" AnchorPane.bottomAnchor="24.600000000000023" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="335.6" />
+      <Button layoutX="264.0" layoutY="349.0" mnemonicParsing="false" onAction="#deleteChecked" prefHeight="26.0" prefWidth="106.0" text="Delete checked" />
+   </children>
+</AnchorPane>

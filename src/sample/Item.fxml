@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ItemController">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="582.0">
+         <children>
+            <Label fx:id="lbID" alignment="CENTER" prefHeight="30.0" prefWidth="82.0" text="ID" />
+            <Label fx:id="lbName" alignment="CENTER" prefHeight="30.0" prefWidth="250.0" text="Name" />
+            <Label fx:id="lbAuName" alignment="CENTER" prefHeight="30.0" prefWidth="250.0" text="Author" />
+         </children>
+      </HBox>
+      <Button fx:id="btnSelect" blendMode="MULTIPLY" mnemonicParsing="false" onAction="#itemDetail" onMouseExited="#resetClickCount" prefHeight="30.0" prefWidth="582.0" />
+   </children>
+</StackPane>

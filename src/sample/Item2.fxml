@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="container" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Item2Controller">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="582.0">
+         <children>
+            <Label fx:id="lbID" alignment="CENTER" prefHeight="30.0" prefWidth="82.0" text="ID" />
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="250.0" text="Name" />
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="220.0" text="Author" />
+            <Pane prefHeight="30.0" prefWidth="30.0">
+               <children>
+                  <CheckBox fx:id="checkBox" layoutX="6.0" layoutY="6.0" mnemonicParsing="false" onAction="#checked" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</StackPane>
